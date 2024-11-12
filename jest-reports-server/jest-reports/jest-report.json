@@ -1,0 +1,75 @@
+{
+    "numTotalTests": 5,
+    "numPassedTests": 3,
+    "numFailedTests": 2,
+    "testResults": [
+      {
+        "testFilePath": "/path/to/your/test/file1.test.js",
+        "numTests": 2,
+        "numPassedTests": 1,
+        "numFailedTests": 1,
+        "testResults": [
+          {
+            "fullName": "should return true when input is valid",
+            "status": "passed",
+            "startTime": 1609459200000,
+            "endTime": 1609459260000,
+            "duration": 60000,
+            "failureMessages": []
+          },
+          {
+            "fullName": "should throw an error when input is invalid",
+            "status": "failed",
+            "startTime": 1609459265000,
+            "endTime": 1609459325000,
+            "duration": 60000,
+            "failureMessages": [
+              "Expected function to throw an error, but it did not."
+            ]
+          }
+        ]
+      },
+      {
+        "testFilePath": "/path/to/your/test/file2.test.js",
+        "numTests": 3,
+        "numPassedTests": 2,
+        "numFailedTests": 1,
+        "testResults": [
+          {
+            "fullName": "should add two numbers correctly",
+            "status": "passed",
+            "startTime": 1609459326000,
+            "endTime": 1609459386000,
+            "duration": 60000,
+            "failureMessages": []
+          },
+          {
+            "fullName": "should multiply two numbers correctly",
+            "status": "passed",
+            "startTime": 1609459390000,
+            "endTime": 1609459450000,
+            "duration": 60000,
+            "failureMessages": []
+          },
+          {
+            "fullName": "should return correct value when dividing",
+            "status": "failed",
+            "startTime": 1609459455000,
+            "endTime": 1609459515000,
+            "duration": 60000,
+            "failureMessages": [
+              "Expected 10 / 0 to throw an error, but it did not."
+            ]
+          }
+        ]
+      }
+    ],
+    "startTime": 1609459200000,
+    "endTime": 1609459500000,
+    "success": false,
+    "wasInterrupted": false,
+    "runtime": 300000,
+    "nodeEnv": "test",
+    "testEnvironment": "node"
+  }
+  

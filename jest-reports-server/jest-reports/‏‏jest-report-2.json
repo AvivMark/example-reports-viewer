@@ -1,0 +1,82 @@
+{
+  "numTotalTests": 6,
+  "numPassedTests": 4,
+  "numFailedTests": 2,
+  "testResults": [
+    {
+      "testFilePath": "/path/to/your/test/file1.test.js",
+      "numTests": 3,
+      "numPassedTests": 3,
+      "numFailedTests": 0,
+      "testResults": [
+        {
+          "fullName": "should return true for valid input",
+          "status": "passed",
+          "startTime": 1609559200000,
+          "endTime": 1609559260000,
+          "duration": 60000,
+          "failureMessages": []
+        },
+        {
+          "fullName": "should add numbers correctly",
+          "status": "passed",
+          "startTime": 1609559265000,
+          "endTime": 1609559325000,
+          "duration": 60000,
+          "failureMessages": []
+        },
+        {
+          "fullName": "should return correct boolean value",
+          "status": "passed",
+          "startTime": 1609559330000,
+          "endTime": 1609559390000,
+          "duration": 60000,
+          "failureMessages": []
+        }
+      ]
+    },
+    {
+      "testFilePath": "/path/to/your/test/file2.test.js",
+      "numTests": 3,
+      "numPassedTests": 1,
+      "numFailedTests": 2,
+      "testResults": [
+        {
+          "fullName": "should divide numbers correctly",
+          "status": "passed",
+          "startTime": 1609559395000,
+          "endTime": 1609559455000,
+          "duration": 60000,
+          "failureMessages": []
+        },
+        {
+          "fullName": "should throw error when dividing by zero",
+          "status": "failed",
+          "startTime": 1609559460000,
+          "endTime": 1609559520000,
+          "duration": 60000,
+          "failureMessages": [
+            "Expected function to throw an error, but it did not."
+          ]
+        },
+        {
+          "fullName": "should return correct result for large numbers",
+          "status": "failed",
+          "startTime": 1609559525000,
+          "endTime": 1609559585000,
+          "duration": 60000,
+          "failureMessages": [
+            "Expected the result to be 1000000, but got 999999."
+          ]
+        }
+      ]
+    }
+  ],
+  "startTime": 1609559200000,
+  "endTime": 1609559600000,
+  "success": false,
+  "wasInterrupted": false,
+  "runtime": 300000,
+  "nodeEnv": "test",
+  "testEnvironment": "node"
+}

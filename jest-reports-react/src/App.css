@@ -1,0 +1,230 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 75vh; /* Reduced height to allow room for the headline */
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(0, 18, 24, 0.9), rgba(21, 45, 65, 0.9));
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-top: 20px; /* Space between the headline and container */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 22%;
+  background: #1f1f1f;
+  border-radius: 10px 0 0 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00d9ff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .report-item {
+  background: #2c2c2c;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .report-item:hover {
+  background-color: #00d9ff;
+  transform: translateX(8px);
+  color: #121212;
+}
+
+/* Main Content */
+.main-content {
+  width: 78%;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title and Summary */
+.main-content h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Test Summary */
+.summary {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary p {
+  font-size: 14px;
+  color: #666;
+}
+
+.summary span {
+  font-weight: bold;
+  color: #00d9ff;
+}
+
+/* Chart Section */
+.chart-container {
+  margin-top: 25px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* Test Details */
+.test-details ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.test-details li {
+  padding: 10px;
+  margin: 6px 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.test-details li.passed {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.test-details li.failed {
+  background-color: #FF5252;
+  color: white;
+}
+
+.test-details li:hover {
+  background-color: #00d9ff;
+  color: #121212;
+}
+
+.failure-messages ul {
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+.failure-messages li {
+  color: #FF6347;
+}
+
+/* Upload Section */
+.upload-section {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.upload-section input[type="file"] {
+  padding: 10px 25px;
+  background-color: #00d9ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-section input[type="file"]:hover {
+  background-color: #00b7cc;
+  transform: scale(1.05);
+}
+
+.upload-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.upload-section .success {
+  color: #00ff99;
+}
+
+.upload-section .error {
+  color: #ff4d4d;
+}
+
+/* Clear Button */
+.clear-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #ff2d00;
+  transform: scale(1.05);
+}
+
+/* Animation for glowing and futuristic headline */
+@keyframes glowing {
+ 
+}
+
+h1 {
+  font-size: 48px; /* Larger font size for more impact */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 2px; /* Slight letter-spacing for a futuristic feel */
+  text-align: center;
+  color: transparent;
+  background-image: linear-gradient(135deg, #00d9ff, #ff00b7);
+  background-clip: text;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+  margin-top: 20px; /* Added margin to prevent overlap with the container */
+  margin-bottom: 20px; /* Space between the headline and the container */
+}
